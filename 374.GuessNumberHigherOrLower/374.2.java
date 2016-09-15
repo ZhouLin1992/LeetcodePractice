@@ -14,6 +14,8 @@ public class Solution extends GuessGame {
         if (guess(end) == 0) return end;
 		while (start < end) {
 			int mid = start + (end - start) / 2;
+			// or faster
+			// int mid = start + end >>> 1;
 			if (guess(mid) == -1) return guessNumber(start, mid - 1);
 			else if (guess(mid) == 1) return guessNumber(mid + 1, end);
 			else return mid;
