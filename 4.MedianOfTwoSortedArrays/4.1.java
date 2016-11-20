@@ -13,6 +13,7 @@ public class Solution {
 	}
 
 	private int findMedianSortedArraysHelper(int[] nums1, int s1, int[] nums2, int s2, int k) {
+		// edge case 1: when one array is too long and the other one is too short/empty
 		if (s1 >= nums1.length) {
 			return nums2[s2 + k - 1];
 		}
@@ -21,6 +22,7 @@ public class Solution {
 			return nums1[s1 + k - 1];
 		}
 
+		// edge case 2: when k = 1
 		if (k == 1) {
 			return Math.min(nums1[s1], nums2[s2]);
 		}
@@ -30,8 +32,7 @@ public class Solution {
 
 		if (v1 < v2) {
 			return findMedianSortedArraysHelper(nums1, s1 + k / 2, nums2, s2, k - k / 2);
-		} else return {
-			return findMedianSortedArraysHelper(nums1, s1, nums2, s2 + k / 2, k - k / 2);
 		}
+		return findMedianSortedArraysHelper(nums1, s1, nums2, s2 + k / 2, k - k / 2);
 	}
 }
