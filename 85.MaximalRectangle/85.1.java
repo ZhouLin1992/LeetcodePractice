@@ -1,3 +1,4 @@
+// time complexity: O(N ^ 2)
 // 1. every row is a base. From every row to upper 
 // direction, we can consider it as histogram
 // e.g. 		 histogram
