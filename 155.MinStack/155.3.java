@@ -15,7 +15,7 @@ public class MinStack {
     }
     
     public void pop() {
-        if (min.get(min.size() - 1) == this.top())
+        if (min.get(min.size() - 1) == stack.get(stack.size() - 1))
             min.remove(min.size() - 1);
         stack.remove(stack.size() - 1);
     }
