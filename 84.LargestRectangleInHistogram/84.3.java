@@ -42,6 +42,9 @@ public class Solution {
 				// right bound(rn) of h is i, left bound(ln) of h is stack.peek()
 				// e.g.:[2, 1, 5,   6,   2,  3]
 				//			   ln   pop  rn
+
+				// after poping, if the stack is empty, means that it is the smallest element
+				// so its left bound can be extended to -1
 				int w = stack.isEmpty() ? i : i - stack.peek() - 1;
 				int area = h * w;
 				max = Math.max(max, area);
