@@ -1,3 +1,8 @@
+// Time complexity: the loop in the peek()/pop() moves elements from input
+// stack to output stack; Each element is moved once, and 
+// only after pushing it, so the average time for each operation
+// is O(1)
+
 class MyQueue {
     // input stack is for pushing elements
     private Stack<Integer> input = new Stack<>();
