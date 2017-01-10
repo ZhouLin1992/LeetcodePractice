@@ -28,5 +28,6 @@ public class Solution {
 			// push相当于i++
 			preorder[++i] = num;
 		}
+		return true;
 	}
 }
