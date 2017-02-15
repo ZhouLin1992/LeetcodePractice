@@ -1,6 +1,11 @@
-// 时间：O((logk + k)N)
-// 空间：O(k)
+/*
+大概思路是用双向队列保存数字的下标，遍历整个数组.
+如果此时队列的首元素是i - k的话，表示此时窗口向右移了一步，则移除队首元素。
+然后比较队尾元素和将要进来的值，如果小的话就都移除，然后此时我们把队首元素加入结果中即可.
 
+时间：O((logk + k)N)
+空间：O(k)
+*/
 public class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0 || nums.length < k) {
