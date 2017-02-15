@@ -1,3 +1,6 @@
+// 时间：O((logk + k)N)
+// 空间：O(k)
+
 public class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0 || nums.length < k) {
