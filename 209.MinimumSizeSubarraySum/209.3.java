@@ -1,4 +1,8 @@
 /*
+这种subarray sum的题目，很多都可以采取类似的方法：
+用一个sums[]，sums[i]表示nums[0:i]的sum，然后对于sums[i], 用二分法找到右边的边界，
+因为都是Positive number，所以sums必然是一个递增sorted array.
+
 Binary Search Algorithm:
 Initial another array with the length to be nums.length + 1, 
 and sum[i] is equal to the sum from nums[0] to nums[i - 1], when meets an index, 
