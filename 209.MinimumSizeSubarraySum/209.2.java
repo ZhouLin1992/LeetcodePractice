@@ -1,3 +1,7 @@
+/*
+滑动窗口方法二
+*/
+
 public class Solution {
     public int minSubArrayLen(int s, int[] nums) {
         if (nums == null || nums.length == 0) {
