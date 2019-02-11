@@ -1,3 +1,7 @@
+/*
+This method cannot be used because it doesn't work with test case [0, 0, 0]
+*/
+
 public class Solution {
 	public List<List<Integer>> threeSum(int[] nums) {
 		List<List<Integer>> res = new ArrayList<>();		
