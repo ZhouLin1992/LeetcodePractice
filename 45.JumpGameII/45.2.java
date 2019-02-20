@@ -1,5 +1,11 @@
-// try to find the maximum distance each jump can reach
+/*
+try to find the maximum distance each jump can reach
 
+time: o(n)
+space: o(1)
+example that can help better understand:
+nums = [2,3,1,1,4,2,1]
+*/
 public class Solution {
 	public int jump(int[] nums) {
 		// last: distance that last jump already covered
