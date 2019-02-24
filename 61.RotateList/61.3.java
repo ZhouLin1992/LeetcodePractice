@@ -20,6 +20,12 @@ public class Solution {
 		for (int i = 0; i < len - k % len; i++) 
 			slow = slow.next;
 
+		/*
+        fast.next 需要先赋值
+        考虑corner case: k == 0 || k == len的倍数：
+        1. 如果首先进行dummy.next = slow.next, slow.next此时为null, 结果return dummy.next会报错
+        2. 所以要先fast.next = head形成闭环
+        */
 		fast.next = dummy.next;
 		dummy.next = slow.next;
 		slow.next = null;
