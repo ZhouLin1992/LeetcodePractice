@@ -1,5 +1,8 @@
-// time: O(N ^ 2)
-// when we find out the peek(right boundary)
+/*
+TLE
+time: O(N ^ 2)
+Find out the peek(right boundary)
+*/
 
 public class Solution {
     public int largestRectangleArea(int[] heights) {
