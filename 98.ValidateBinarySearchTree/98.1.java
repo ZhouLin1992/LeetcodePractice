@@ -1,3 +1,9 @@
+/*
+time: o(n), we visit each node exactly once
+space: o(n), we keep up to the entire tree
+*/
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
