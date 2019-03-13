@@ -1,3 +1,8 @@
+/*
+time: o(NlogN)
+space: o(logN) because we maintain a height balanced tree
+*/
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
