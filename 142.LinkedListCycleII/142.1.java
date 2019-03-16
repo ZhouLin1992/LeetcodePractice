@@ -1,3 +1,5 @@
+// refer to https://blog.csdn.net/willduan1/article/details/50938210 for math reasoning
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
