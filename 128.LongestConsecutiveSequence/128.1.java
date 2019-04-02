@@ -1,7 +1,7 @@
 // Analysis:
 // find out the left and right bound of a subsequence
 // time complexity of putting every element into set is O(N)
-// traverse every element in the set only once, time complexity if O(N)
+// traverse every element in the set only once, time complexity is O(N)
 
 public class Solution {
 	public int longestConsecutive(int[] nums) {
