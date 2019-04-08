@@ -1,3 +1,5 @@
+// topological sort
+
 public class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         int[] degrees = new int[numCourses];
