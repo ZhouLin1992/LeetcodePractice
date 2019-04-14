@@ -3,6 +3,7 @@
 // 1. push new element into the queue (right now the new element is at the tail)
 // 2. rotate the queue util the new element is at the head
 // 3. every time push a new element, do the push() operation again
+// o(N) push, o(1) pop
 
 class MyStack {
     // Push element x onto stack.
