@@ -7,18 +7,18 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
+class Solution {
     public int closestValue(TreeNode root, double target) {
-        TreeNode t = root;
-        double diff = Math.abs(t.val - target);
-        int res = root.val;
-        while (t != null) {
-            if (Math.abs(t.val - target) < diff) {
-                res = t.val;
-                diff = Math.abs(res - target);
+        TreeNode node = root;
+        int result = node.val;
+
+        while (node != null) {
+            if (Math.abs(target - result) > Math.abs(target - node.val)) {
+                result = node.val;
             }
-            t = target < t.val ? t.left : t.right;
+            node = target < node.val ? node.left : node.right;
         }
-        return res;
+
+        return result;
     }
 }
