@@ -1,7 +1,6 @@
 public class BSTIterator {
-
-	private Deque<TreenNode> stack;
-	private TreeNode cur;
+    private Deque<TreenNode> stack;
+    private TreeNode cur;
     public BSTIterator(TreeNode root) {
         stack = new LinkedList<>();
         cur = root;
