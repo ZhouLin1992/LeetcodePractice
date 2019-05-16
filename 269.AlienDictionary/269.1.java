@@ -4,6 +4,7 @@ Difference is that we need to build graph by comparing every consecutive pair of
 then doing topological sort for the graph to get the result string
 
 https://leetcode.com/problems/alien-dictionary/discuss/70119/Java-AC-solution-using-BFS
+https://github.com/awangdev/LintCode/blob/master/Java/Alien%20Dictionary.java
 */
 
 class Solution {
