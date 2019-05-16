@@ -1,3 +1,9 @@
+/*
+0: not visited
+1: visting
+2: visited
+ */
+
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
 		List<Integer>[] edges = new ArrayList[numCourses];
