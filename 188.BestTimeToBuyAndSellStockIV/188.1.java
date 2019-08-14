@@ -1,4 +1,6 @@
 /*
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/discuss/54117/Clean-Java-DP-solution-with-comment
+
 dp[i][j] represents max profit up until prices[j] using at most i transactions
 dp[i, j] = max(dp[i, j-1], prices[j] - prices[jj] + dp[i-1, jj]) { jj in range of [0, j-1] }
          = max(dp[i, j-1], prices[j] + max(dp[i-1, jj] - prices[jj]))
