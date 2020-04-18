@@ -1,6 +1,8 @@
 /**
 https://www.youtube.com/watch?v=u_Wc4jwrp3Q&t=1174s
 https://leetcode.com/problems/find-the-shortest-superstring/discuss/194932/Travelling-Salesman-Problem
+time: O(n^2 * 2^n) 对于每一个状态 需要枚举它的parent 所以是n^2
+space: O(n * 2^n)
 **/
 
 class Solution {
