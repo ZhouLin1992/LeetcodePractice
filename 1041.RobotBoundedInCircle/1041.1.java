@@ -13,7 +13,7 @@ class Solution {
         for (char ch : instructions.toCharArray()) {
             if (ch == 'G') {
                 point[0] += dirs[dir][0];
-                point[0] += dirs[dir][1];
+                point[1] += dirs[dir][1];
             } else if (ch == 'L') {
                 dir = (dir + 3) % 4;
             } else {
