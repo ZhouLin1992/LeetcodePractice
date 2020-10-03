@@ -1,3 +1,11 @@
+/**
+Think of this as "scanning" from left to right with a "vertical laser". 
+Every endpoint (a start point, or an end point) is an event. 
+A start point is +1, an end point is -1. 
+The accumulated value "count" would be the number of "active" intervals 
+which is cut by the vertical laser.
+**/
+
 class MyCalendarTwo {
     Map<Integer, Integer> map;
 
