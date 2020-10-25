@@ -1,0 +1,21 @@
+class Solution {
+    public boolean validateStackSequences(int[] pushed, int[] popped) {
+        if (pushed == null || pushed.length == 0 || popped == null || popped.length == 0) {
+            return true;
+        }
+        
+        int i = 0;
+        int j = 0;
+        
+        for (int val : pushed) {
+            pushed[i] = val;
+            while (i >=0 && pushed[i] == popped[j]) {
+                j++;
+                i--;
+            }
+            i++;
+        }
+        
+        return i == 0;
+    }
+}
