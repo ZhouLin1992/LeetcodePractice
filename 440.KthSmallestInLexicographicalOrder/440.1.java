@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/discuss/369094/Java-100-Solution-(
+
 class Solution {
     public int findKthNumber(int n, int k) {
         long cur = 1;
